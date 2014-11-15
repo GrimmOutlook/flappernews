@@ -10,6 +10,10 @@ function($scope){
       {title: 'post 4', upvotes: 3},
       {title: 'post 5', upvotes: 14}
     ];
+    $scope.addPost = function(){
+      $scope.posts.push({title: $scope.title, upvotes: 0});
+      $scope.title = '';
+    };
 }]);
 
 
